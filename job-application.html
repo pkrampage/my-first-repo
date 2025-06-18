@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <fieldset>
+        <h1>ฟอร์มสมัครงานตำแหน่ง Frontend Developer</h1>
+        <form method="post" action="/submit-application">
+        <label for="fname">ชื่อ</label> 
+        <input type="text" name="fname" id="fname" required>
+        <br>
+        <label for="lname">นามสกุล</label>
+        <input type="text" name="lname" id="lname">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="tel">Tel No.</label>
+        <input type="tel" name="tel" id="tel">
+        <br>
+        <label for="birthday">Birth Date</label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address"></textarea>
+        <br>
+        <label for="interest">Interest Position</label>
+        <select name="interest" id="interest">
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Fullstack">Fullstack</option>
+        </select>
+        <br>
+        Skill
+        <br>
+        <input type="checkbox" name="skill[]" id="HTML" value="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="skill[]" id="CSS" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="skill[]" id="JavaScript" value="JavaScript">
+        <label for="JavaScript">JavaScript</label>
+        <input type="checkbox" name="skill[]" id="React" value="React">
+        <label for="React">React</label>
+        <input type="checkbox" name="skill[]" id="PHP" value="React">        
+        <label for="PHP">PHP</label>
+        <br>
+        <label for="expyrs">ประสบการณ์ในการทำงาน</label>
+        <input type="number" name="expyrs" id="expyrs">
+        <br>
+        <label for="resume">Resume File</label>
+        <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx">
+        <br>
+        <label for="other">อื่น ๆ ที่เราอยากรู้เกี่ยวกับคุณ</label>
+        <input type="text" name="other" id="other">
+        <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    </fieldset>
+</body>
+</html>
