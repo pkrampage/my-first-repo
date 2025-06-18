@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Table</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        table caption{
+            font-weight: bold;
+        }
+        tr:hover{
+            background-color: #f2f2f2; 
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <caption>Web Developer Training Roadmap</caption>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Due Date</th>
+                <th>Finish Date</th>
+                <th>Goals</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML: tag, form, table, semantic</td>
+                <td>Completed</td>
+                <td>Mon/16/06/25</td>
+                <td>Mon/16/06/25</td>
+                <td>ทำเว็บ "หน้าโปรไฟล์ส่วนตัว" (CV) ง่ายๆ</td>
+            </tr>
+            <tr>
+                <td>CSS: Selector, Box Model</td>
+                <td>Completed</td>
+                <td>Tue/17/06/25</td>
+                <td>Tue/17/06/25</td>
+                <td>แต่งโปรไฟล์เว็บให้ดูดีขึ้น</td>
+            </tr>
+            <tr>
+                <td>CSS: Flexbox</td>
+                <td>Completed</td>
+                <td>Wed/18/06/25</td>
+                <td>Tue/17/06/25</td>
+                <td>Layout แบบยืดหยุ่น ทำ Card สวยๆ</td>
+            </tr>
+            <tr>
+                <td>CSS: Grid</td>
+                <td>Completed</td>
+                <td>Thu/19/06/25</td>
+                <td>Tue/17/06/25</td>
+                <td>สร้าง Gallery รูปภาพด้วย Grid</td>
+            </tr>
+            <tr>
+                <td>Responsive + Media Query</td>
+                <td>Completed</td>
+                <td>Fri/20/06/25</td>
+                <td>Tue/17/06/25</td>
+                <td>เว็บใช้งานได้บนมือถือ</td>
+            </tr>
+            <tr>
+                <td>Git/GitHub + VSCode</td>
+                <td>Completed</td>
+                <td>Sat/21/06/25</td>
+                <td>Wed/18/06/25</td>
+                <td>สร้าง GitHub Repo, push โปรเจกต์แรก</td>
+            </tr>
+            <tr>
+                <td>ทบทวน + ทำ Portfolio หน้าแรก</td>
+                <td>Not started</td>
+                <td>Sun/22/06/25</td>
+                <td>-</td>
+                <td>Deploy GitHub Pages (ฟรี)</td>
+            </tr>
+                    <tr>
+                <td>ตัวแปร var, let, const</td>
+                <td>Not started</td>
+                <td>Mon/23/06/25</td>
+                <td>-</td>
+                <td>เข้าใจ scope และตัวแปร</td>
+            </tr>
+            <tr>
+                <td>If/Else, Function</td>
+                <td>Not started</td>
+                <td>Tue/24/06/25</td>
+                <td>-</td>
+                <td>เขียนฟังก์ชันแปลงหน่วย</td>
+            </tr>
+            <tr>
+                <td>Loop (for, while)</td>
+                <td>Not started</td>
+                <td>Wed/25/06/25</td>
+                <td>-</td>
+                <td>ทำฟังก์ชันคูณแม่สูตรคูณ</td>
+            </tr>
+            <tr>
+                <td>Array, Object</td>
+                <td>Not started</td>
+                <td>Thu/26/06/25</td>
+                <td>-</td>
+                <td>เขียนข้อมูลคน,สินค้า</td>
+            </tr>
+            <tr>
+                <td>DOM (getElementById, querySelector)</td>
+                <td>Not started</td>
+                <td>Fri/27/06/25</td>
+                <td>-</td>
+                <td>เปลี่ยนข้อความ/รูปภาพผ่าน JS</td>
+            </tr>
+            <tr>
+                <td>Event (click, input)</td>
+                <td>Not started</td>
+                <td>Sat/28/06/25</td>
+                <td>-</td>
+                <td>ปุ่มเปลี่ยนธีม (dark/light)</td>
+            </tr>
+            <tr>
+                <td>ทบทวน + Mini Project</td>
+                <td>Not started</td>
+                <td>Sun/29/06/25</td>
+                <td>-</td>
+                <td>ฟอร์มกรอกข้อมูล + เช็คค่าถูกต้อง</td>
+            </tr>
+            <tr>
+                <td>ES6 (Arrow Function, let/const)</td>
+                <td>Not started</td>
+                <td>Mon/30/06/25</td>
+                <td>-</td>
+                <td>โค้ดสั้น อ่านง่าย</td>
+            </tr>
+            <tr>
+                <td>Destructuring, Template Literal</td>
+                <td>Not started</td>
+                <td>Tue/01/07/25</td>
+                <td>-</td>
+                <td>ใช้งาน Object/Array ง่าย</td>
+            </tr>
+            <tr>
+                <td>Class + Module</td>
+                <td>Not started</td>
+                <td>Wed/02/07/25</td>
+                <td>-</td>
+                <td>เขียน Class สร้าง Object</td>
+            </tr>
+            <tr>
+                <td>Bootstrap: Grid + Component</td>
+                <td>Not started</td>
+                <td>Thu/03/07/25</td>
+                <td>-</td>
+                <td>สร้าง Navbar, Card, Button</td>
+            </tr>
+            <tr>
+                <td>Tailwind CSS</td>
+                <td>Not started</td>
+                <td>Fri/04/07/25</td>
+                <td>-</td>
+                <td>ลอง Tailwind, ทำหน้า Landing Page</td>
+            </tr>
+            <tr>
+                <td>Responsive Design Practice</td>
+                <td>Not started</td>
+                <td>Sat/05/07/25</td>
+                <td>-</td>
+                <td>ออกแบบ Mobile First</td>
+            </tr>
+            <tr>
+                <td>ทบทวน + ทำ Mini Project</td>
+                <td>Not started</td>
+                <td>Sun/06/07/25</td>
+                <td>-</td>
+                <td>สร้างเว็บ Product Catalog</td>
+            </tr>
+             <tr>
+                <td>React Intro, JSX, Component</td>
+                <td>Not started</td>
+                <td>Mon/07/07/25</td>
+                <td>-</td>
+                <td>โค้ดสั้น อ่านง่าย</td>
+            </tr>
+            <tr>
+                <td>Props</td>
+                <td>Not started</td>
+                <td>Tue/08/07/25</td>
+                <td>-</td>
+                <td>ใช้งาน Object/Array ง่าย</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Not started</td>
+                <td>Wed/09/07/25</td>
+                <td>-</td>
+                <td>เขียน Class สร้าง Object</td>
+            </tr>
+            <tr>
+                <td>Event Handling</td>
+                <td>Not started</td>
+                <td>Thu/10/07/25</td>
+                <td>-</td>
+                <td>สร้าง Navbar, Card, Button</td>
+            </tr>
+            <tr>
+                <td>Conditional Rendering</td>
+                <td>Not started</td>
+                <td>Fri/11/07/25</td>
+                <td>-</td>
+                <td>ลอง Tailwind, ทำหน้า Landing Page</td>
+            </tr>
+            <tr>
+                <td>List + Key + map()</td>
+                <td>Not started</td>
+                <td>Sat/12/07/25</td>
+                <td>-</td>
+                <td>ออกแบบ Mobile First</td>
+            </tr>
+            <tr>
+                <td>ทบทวน</td>
+                <td>Not started</td>
+                <td>Sun/13/07/25</td>
+                <td>-</td>
+                <td>สร้างเว็บ Product Catalog</td>
+            </tr>       
+                    <tr>
+                <td>React Intro, JSX, Component</td>
+                <td>Not started</td>
+                <td>Mon/07/07/25</td>
+                <td>-</td>
+                <td>โค้ดสั้น อ่านง่าย</td>
+            </tr>
+            <tr>
+                <td>Props</td>
+                <td>Not started</td>
+                <td>Tue/08/07/25</td>
+                <td>-</td>
+                <td>ใช้งาน Object/Array ง่าย</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>Not started</td>
+                <td>Wed/09/07/25</td>
+                <td>-</td>
+                <td>เขียน Class สร้าง Object</td>
+            </tr>
+            <tr>
+                <td>Event Handling</td>
+                <td>Not started</td>
+                <td>Thu/10/07/25</td>
+                <td>-</td>
+                <td>สร้าง Navbar, Card, Button</td>
+            </tr>
+            <tr>
+                <td>Conditional Rendering</td>
+                <td>Not started</td>
+                <td>Fri/11/07/25</td>
+                <td>-</td>
+                <td>ลอง Tailwind, ทำหน้า Landing Page</td>
+            </tr>
+            <tr>
+                <td>List + Key + map()</td>
+                <td>Not started</td>
+                <td>Sat/12/07/25</td>
+                <td>-</td>
+                <td>ออกแบบ Mobile First</td>
+            </tr>
+            <tr>
+                <td>ทบทวน</td>
+                <td>Not started</td>
+                <td>Sun/13/07/25</td>
+                <td>-</td>
+                <td>สร้างเว็บ Product Catalog</td>
+            </tr>
+            <tr>
+                <td>Firebase (Auth + Firestore)</td>
+                <td>Not started</td>
+                <td>Mon/14/07/25</td>
+                <td>-</td>
+                <td>สมัครสมาชิก/Login</td>
+            </tr>
+            <tr>
+                <td>Supabase (CRUD)</td>
+                <td>Not started</td>
+                <td>Tue/15/07/25</td>
+                <td>-</td>
+                <td>จัดการข้อมูล (NoSQL)</td>
+            </tr>
+            <tr>
+                <td>REST API</td>
+                <td>Not started</td>
+                <td>Wed/16/07/25</td>
+                <td>-</td>
+                <td>เข้าใจ request/response</td>
+            </tr>
+            <tr>
+                <td>Node.js + Express</td>
+                <td>Not started</td>
+                <td>Thu/17/07/25</td>
+                <td>-</td>
+                <td>สร้าง API ส่งข้อมูล JSON</td>
+            </tr>
+            <tr>
+                <td>MongoDB Intro</td>
+                <td>Not started</td>
+                <td>Fri/18/07/25</td>
+                <td>-</td>
+                <td>CRUD พื้นฐาน</td>
+            </tr>
+            <tr>
+                <td>เชื่อม React + API</td>
+                <td>Not started</td>
+                <td>Sat/19/07/25</td>
+                <td>-</td>
+                <td>React fetch data</td>
+            </tr>
+            <tr>
+                <td>Deploy React App</td>
+                <td>Not started</td>
+                <td>Sun/20/07/25</td>
+                <td>-</td>
+                <td>บน Netlify หรือ Vercel</td>
+            </tr>
+            <tr>
+                <td>Next.js Intro</td>
+                <td>Not started</td>
+                <td>Mon/21/07/25</td>
+                <td>-</td>
+                <td>SSR/SSG ต่างจาก React ยังไง</td>
+            </tr>
+            <tr>
+                <td>Routing & Dynamic Pages</td>
+                <td>Not started</td>
+                <td>Tue/22/07/25</td>
+                <td>-</td>
+                <td>ทำ Blog Page</td>
+            </tr>
+            <tr>
+                <td>Data Fetching (getServerSideProps)</td>
+                <td>Not started</td>
+                <td>Wed/23/07/25</td>
+                <td>-</td>
+                <td>ดึงข้อมูล server</td>
+            </tr>
+            <tr>
+                <td>API Routes</td>
+                <td>Not started</td>
+                <td>Thu/24/07/25</td>
+                <td>-</td>
+                <td>สร้าง API ใน Next.js</td>
+            </tr>
+            <tr>
+                <td>SEO & Meta</td>
+                <td>Not started</td>
+                <td>Fri/25/07/25</td>
+                <td>-</td>
+                <td>ให้เว็บติด Google</td>
+            </tr>
+            <tr>
+                <td>Deploy Next.js</td>
+                <td>Not started</td>
+                <td>Sat/26/07/25</td>
+                <td>-</td>
+                <td>Vercel</td>
+            </tr>
+            <tr>
+                <td>ปรับปรุง Portfolio</td>
+                <td>Not started</td>
+                <td>Sun/27/07/25</td>
+                <td>-</td>
+                <td>เพิ่ม Next.js/React/Firebase</td>
+            </tr>
+            <tr>
+                <td>วางแผน Full-stack Project (Idea + UI)</td>
+                <td>Not started</td>
+                <td>Mon/28/07/25</td>
+                <td>-</td>
+                <td>กำหนดประเภท App (เช่น Blog, Shop, Food) + วาด Wireframe/Design</td>
+            </tr>
+            <tr>
+                <td>เตรียม Frontend Project Structure (React/Next)</td>
+                <td>Not started</td>
+                <td>Tue/29/07/25</td>
+                <td>-</td>
+                <td>ตั้งค่า Folder, Routing, Page</td>
+            </tr>
+            <tr>
+                <td>ทำ UI หน้าแรก + Component หลัก</td>
+                <td>Not started</td>
+                <td>Wed/30/07/25</td>
+                <td>-</td>
+                <td>Header, Footer, Home Page</td>
+            </tr>
+            <tr>
+                <td>ทำระบบจัดการข้อมูล (State + Props)</td>
+                <td>Not started</td>
+                <td>Thu/31/07/25</td>
+                <td>-</td>
+                <td>ใช้ useState / Context API ถ้าจำเป็น</td>
+            </tr>
+            <tr>
+                <td>เชื่อม Backend API (Firebase/Supabase/Node.js)</td>
+                <td>Not started</td>
+                <td>Fri/01/08/25</td>
+                <td>-</td>
+                <td>Fetch ข้อมูลจริงจาก Backend</td>
+            </tr>
+            <tr>
+                <td>ทำ Auth/Login (Firebase/Supabase)</td>
+                <td>Not started</td>
+                <td>Sat/02/08/25</td>
+                <td>-</td>
+                <td>สมัครสมาชิก/ล็อกอิน/Logout ได้</td>
+            </tr>
+            <tr>
+                <td>ทดสอบ/Debug เบื้องต้น</td>
+                <td>Not started</td>
+                <td>Sun/03/08/25</td>
+                <td>-</td>
+                <td>ตรวจสอบ Flow ทั้งระบบ</td>
+            </tr>
+            <tr>
+                <td>ทำ CRUD Operation (เพิ่ม/แก้/ลบ ข้อมูล)</td>
+                <td>Not started</td>
+                <td>Mon/04/08/25</td>
+                <td>-</td>
+                <td>เพิ่ม/แก้ไข/ลบข้อมูลจาก Database ได้</td>
+            </tr>
+            <tr>
+                <td>ทำฟีเจอร์เสริม (Search, Filter, Sort)</td>
+                <td>Not started</td>
+                <td>Tue/05/08/25</td>
+                <td>-</td>
+                <td>ค้นหา/กรองข้อมูลใน Frontend</td>
+            </tr>
+            <tr>
+                <td>สรุป/บันทึก API Endpoint + Doc</td>
+                <td>Not started</td>
+                <td>Wed/06/08/25</td>
+                <td>-</td>
+                <td>ทำ README หรือ API Doc</td>
+            </tr>
+            <tr>
+                <td>ทดสอบ Responsive Design + Mobile</td>
+                <td>Not started</td>
+                <td>Thu/07/08/25</td>
+                <td>-</td>
+                <td>ใช้งานได้ดีในมือถือ</td>
+            </tr>
+            <tr>
+                <td>ทำ SEO เบื้องต้น + Meta (Next.js)</td>
+                <td>Not started</td>
+                <td>Fri/08/08/25</td>
+                <td>-</td>
+                <td>ให้ Google อ่าน SEO ได้ดี</td>
+            </tr>
+            <tr>
+                <td>Deploy Fullstack App (Netlify/Vercel)</td>
+                <td>Not started</td>
+                <td>Sat/09/08/25</td>
+                <td>-</td>
+                <td>เว็บไซต์ออนไลน์ ใช้งานจริง</td>
+            </tr>
+            <tr>
+                <td>ทบทวน/Refactor/เพิ่ม Comment</td>
+                <td>Not started</td>
+                <td>Sun/10/08/25</td>
+                <td>-</td>
+                <td>ทำโค้ดสะอาด อ่านง่าย</td>
+            </tr>
+            <tr>
+                <td>สร้าง README โปรเจกต์สวย ๆ</td>
+                <td>Not started</td>
+                <td>Mon/11/08/25</td>
+                <td>-</td>
+                <td>อธิบายวิธีใช้/ฟีเจอร์ใน GitHub</td>
+            </tr>
+            <tr>
+                <td>อัปเดต Portfolio + ลิงก์โปรเจกต์</td>
+                <td>Not started</td>
+                <td>Tue/12/08/25</td>
+                <td>-</td>
+                <td>ใส่โปรเจกต์ในเว็บ Portfolio</td>
+            </tr>
+            <tr>
+                <td>เขียนบทความ/โพสต์ลง Medium/GitHub</td>
+                <td>Not started</td>
+                <td>Wed/13/08/25</td>
+                <td>-</td>
+                <td>เล่าแนวคิด/ปัญหาที่เจอ/สิ่งที่ได้เรียนรู้</td>
+            </tr>
+            <tr>
+                <td>เตรียม Resume + LinkedIn</td>
+                <td>Not started</td>
+                <td>Thu/14/08/25</td>
+                <td>-</td>
+                <td>อัปเดตทักษะ + โปรเจกต์ใน CV</td>
+            </tr>
+            <tr>
+                <td>สมัครงาน/ฟรีแลนซ์ 1 ที่</td>
+                <td>Not started</td>
+                <td>Fri/15/08/25</td>
+                <td>-</td>
+                <td>ส่งใบสมัครจริง หรือประกาศรับงานฟรีแลนซ์</td>
+            </tr>
+            <tr>
+                <td>สรุปผล + Plan ระยะต่อไป</td>
+                <td>Not started</td>
+                <td>Sat/16/08/25</td>
+                <td>-</td>
+                <td>วางแผนทำโปรเจกต์ใหม่ หรือ Upskill เพิ่ม</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
