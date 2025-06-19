@@ -30,8 +30,6 @@ my-first-repo/
 
 ## 📝 What I Learned
 
-## 📝 What I Learned
-
 I’ve been through web development before, but to be honest, I didn’t take it very seriously back then.  
 I was jumping between tutorials, not really knowing what I was doing — and when things got too confusing or frustrating, I gave up.  
 It’s been years since I last built anything, so coming back felt a bit rusty at first.  
