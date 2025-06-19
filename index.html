@@ -4,80 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <img src="profile1.png" alt="" style="width: 250px; border-radius: 8px;">
-        <h1>Pubeth Kholomklang</h1>
-        <p><i>Passionate web developer learner.</i></p>
-    </main>
-    <hr>
-    <section>
-        <h2>My Contact</h2>
-        <ul>
-            <li>Email: <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></li>
-            <li>My GitHub: <a href="https://github.com/bakedoggydog">PKRampage</a></li>
-            <li>My Linkin: <a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></li>
-        </ul>
-    </section>
-    <section>
-        <h2>About Me</h2>
-    </section>
-    <section>
-        <h2>Skill</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Linux</li>
-            <li>Docker</li>
-            <li>Network</li>
-            <li>Digital Forensic</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Project / Experience</h2>
-        <article>
-            <h3>Infotronics Co.,Ltd. - Trainee</h3>
-            <p>I developed a backend system to support Vtiger CRM on the Cloud, enabling seamless user registration for Vtiger Cloud services provided by InfoTronics Co., Ltd., using PHP.</p>
-        </article>
-        <article>
-            <h3>Office of the Army Comptroller - Tech Support</h3>
-            <p>I developed a Webserver system running on Docker Container, deploying nginx-proxy-manager, filebrowser, and Portainer using docker-compose.</p>
-        </article>
-    </section>
-    <section>
-        <h2>Education / Certifications</h2>
-        <article>
-            <h3>Thai-Nichi Institute of Technology</h3>
-            <p>B.Sc. (Information Technology) (2008-2012)</p>
-            <h3>Chetupon Commercial College</h3>
-            <p>Business Computing (2005-2007)</p>
-        </article>
-    </section>
-    <section>
-        <h2>Interests</h2>
-        <ul>
-            <li>Video Game</li>
-            <li>Software Development</li>
-            <li>AI</li>
-            <li>System Admin</li>
-            <li>Astrology</li>
-            <li>History</li>
-        </ul>
-    </section>
-    <section>
-    <section>
-    <h2>Contact Me</h2>
-    <form>
-        <label>Name: <input type="text" name="name"></label><br>
-        <label>Email: <input type="email" name="email"></label><br>
-        <input type="submit" value="Send">
-    </form>
-    </section>
-    <footer>
-        <p>© 2025 Pubeth. All rights reserved.</p>
-    </footer>
+    <div class="main-container">
+        <main>
+            <img src="assets/images/profile2.png" alt="profile picture">
+            <h1>Pubeth Kholomklang</h1>
+            <p>Passionate web developer learner.</p>
+        </main>
+        <section>
+            <h2>My Contact</h2>
+            <p>Email: <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></p>
+            <p>My GitHub: <a href="https://github.com/pkrampage">PKRampage</a></p>
+            <p>My Linkin: <a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></p>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <p>Hi, I'm Pubeth — a curious mind from Bangkok with a passion for pixels, planets, and the past. 
+                I'm a web developer who loves weaving technology with imagination. 
+                Whether it's exploring front-end interactivity, diving into historical rabbit holes, decoding astrology charts, 
+                or conquering video game worlds, I'm all about turning ideas into engaging digital experiences.</p>
+        </section>
+        <section>
+            <h2>Skill</h2>
+            <div class="grid-container">
+                <div class="grid-container card">HTML</div>
+                <div class="grid-container card">CSS</div>
+                <div class="grid-container card">JavaScript</div>
+                <div class="grid-container card">Linux</div>
+                <div class="grid-container card">Docker</div>
+                <div class="grid-container card">Network</div>
+                <div class="grid-container card">Digital Forensic</div>
+            </div>
+        </section>
+        <section>
+            <h2>Project / Experience</h2>
+            <article>
+                <h3>Infotronics Co.,Ltd. - Trainee</h3>
+                <p>Developed a backend system to support Vtiger CRM on the Cloud, enabling seamless user registration for Vtiger Cloud services provided by InfoTronics Co., Ltd., using PHP.</p>
+            </article>
+            <article>
+                <h3>Office of the Army Comptroller - Tech Support</h3>
+                <p>Developed a Webserver system running on Docker Container, deploying nginx-proxy-manager, filebrowser, and Portainer using docker-compose.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Education / Certifications</h2>
+            <article>
+                <h3>Thai-Nichi Institute of Technology</h3>
+                <p>B.Sc. (Information Technology) (2008-2012)</p>
+            </article>
+            <article>
+                <h3>Chetupon Commercial College</h3>
+                <p>Business Computing (2005-2007)</p>
+            </article>
+        </section>
+        <section>
+            <h2>Interests</h2>
+            <div class="grid-container">
+                <div class="grid-container card">Video Game</div>
+                <div class="grid-container card">Software Development</div>
+                <div class="grid-container card">Linux System Administration</div>
+                <div class="grid-container card">A.I.</div>            
+                <div class="grid-container card">History</div>
+                <div class="grid-container card">Astrology</div>
+            </div>
+        </section>
+        <section class="form">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        </section>
+        <footer>
+            <p>© 2025 Pubeth. All rights reserved.</p>
+            <p>19 June 2025</p>
+        </footer>
+    </div>
 </body>
 </html>
