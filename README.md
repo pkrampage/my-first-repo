@@ -7,6 +7,7 @@ This is a small project I built while learning web development. It's nothing fan
 
 - HTML5 (structure)
 - Git (version control)
+- CSS (Selector, Flex, Grid)
 
 ## 📄 File Structure
 <pre>
@@ -41,7 +42,7 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 
 ## 🚧 Future Enhancements
 
-- [*] Improve overall styling using **custom CSS**
+- [x] Improve overall styling using **custom CSS**
 - [ ] Make the layout **responsive** using media queries and mobile-first techniques
 - [ ] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
 - [ ] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
