@@ -41,7 +41,9 @@ body.dark-theme{
     transition: background-color 0.3s ease;
 }
 
-.main-container {
+/*Grid Container*/
+
+.main-grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -56,7 +58,7 @@ body.dark-theme{
     gap: 20px;
 }
 
-.main-container nav{
+.main-grid-container nav{
     grid-area:nav;
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
@@ -70,22 +72,22 @@ body.dark-theme{
     transition: background-color 0.3s ease;
 }
 
-.main-container nav .nav-logo{
+.main-grid-container nav .nav-logo{
     width: 155px;
 }
 
-.main-container nav .nav-logo a{
+.main-grid-container nav .nav-logo a{
     color:var(--primary-color);
     font-size:1.5em;
     font-weight: bold;
     text-decoration: none;
 }
 
-.main-container nav .nav-logo a:hover{
+.main-grid-container nav .nav-logo a:hover{
     color:var(--accent-color);
 }
 
-.main-container nav ul{
+.main-grid-container nav ul{
     list-style: none;
     margin:0;
     padding:0;
@@ -93,30 +95,30 @@ body.dark-theme{
     gap:20px;
 }
 
-.main-container nav li a{
+.main-grid-container nav li a{
     color:var(--primary-color);
     font-weight: bold;
     text-decoration: none;
 }
 
-.main-container nav li a:hover{
+.main-grid-container nav li a:hover{
     color:var(--accent-color);
 }
 
-.main-container nav ul.active{
+.main-grid-container nav ul.active{
     display: flex;
     opacity: 1;
     pointer-events: auto;
     transform: translate(0);
 }
 
-.main-container nav li a.active{
+.main-grid-container nav li a.active{
     color:var(--accent-color);
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 3px;
 }
 
-.main-container nav .nav-btn button{
+.main-grid-container nav .nav-btn button{
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--light-text);
@@ -129,7 +131,7 @@ body.dark-theme{
     width: 130px;
 }
 
-.main-container nav .nav-btn button{
+.main-grid-container nav .nav-btn button{
     background-color: var(--primary-color);
     color: var(--light-text);
     border: none;
@@ -142,12 +144,12 @@ body.dark-theme{
     transition: all 0.3s ease-in-out;
 }
 
-.main-container nav .nav-btn button:hover{
+.main-grid-container nav .nav-btn button:hover{
     background-color: var(--hover-color);
     transform: translateY(-2px);
 }
 
-.main-container main {
+.main-grid-container main {
     grid-area: main;
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
@@ -163,7 +165,7 @@ body.dark-theme{
     transition: background-color 0.3s ease;
 }
 
-.main-container main img {
+.main-grid-container main img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -173,13 +175,13 @@ body.dark-theme{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.main-container main h1 {
+.main-grid-container main h1 {
     color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 2.5em;
 }
 
-.main-container main p {
+.main-grid-container main p {
     color: var(--muted-color);
     font-style: italic;
     font-size: 1.2em;
@@ -187,7 +189,7 @@ body.dark-theme{
     max-width: 500px;
 }
 
-.main-container section {
+.main-grid-container section {
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
     padding: 10px;
@@ -206,12 +208,12 @@ section a:hover {
     color: var(--hover-color);
 }
 
-.main-container section:hover {
+.main-grid-container section:hover {
     transform: translateY(-5px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.main-container section h2 {
+.main-grid-container section h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -219,13 +221,13 @@ section a:hover {
     border-bottom: 2px solid var(--accent-color-2);
 }
 
-.main-container section h3 {
+.main-grid-container section h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-.main-container section p {
+.main-grid-container section p {
     font-size: 1em;
     margin-bottom: 10px;
 }
@@ -254,6 +256,18 @@ section a:hover {
     background-color: var(--accent-color);
     color: var(--light-text);
     transform: translateY(-3px);
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .form {
@@ -308,51 +322,144 @@ section a:hover {
     transform: translateY(-2px);
 }
 
-footer {
-    grid-area: footer;
-    display: flex;
+/* Flex Container */
+.main-flex-container{
+    display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    padding: 20px;
-    border-radius: 10px;
+    gap:20px;
 }
 
-/*mobile phone*/
+.main-flex-container section{
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    padding: 30px;
+    margin: 0px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.main-flex-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.main-flex-container h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color-2);
+}
+
+.main-flex-container h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.main-flex-container p.tagline {
+    color: var(--muted-color);
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.main-flex-container p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.main-flex-container form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.main-flex-container form label{
+    display: block;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.main-flex-container form input[type="text"],input[type="password"]{
+    width:200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    background-color: var(--primary-bg-color);
+    caret-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(44, 82, 179, 0.2);
+}
+
+.main-flex-container form input[type="text"]:focus,input[type="password"]:focus{
+    outline:none;
+    border: 1px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.main-flex-container form input[type="submit"]{
+    width: 200px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.main-flex-container form input[type="submit"]:hover{
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+}
+
+/* Mobile Phone Responsive */
 @media (max-width: 767px){
-    .main-container {
+    .main-grid-container {
         display:flex;
         flex-direction: column;
     }
-    .main-container nav ul{
+    .main-grid-container nav ul{
         display: none;
     }
-    .main-container nav .nav-logo a{
+    .main-grid-container nav .nav-logo a{
         font-size:1.2em;
     }
-    .main-container nav .nav-btn button{
+    .main-grid-container nav .nav-btn button{
         font-size:0.8em;
         align-self: baseline;
         max-width: 100px;
         padding:10px;
     }
-    .main-container main h1,
-    .main-container main p{
+    .main-grid-container main h1,
+    .main-grid-container main p{
         text-align: center;
     }
-    .main-container section h2{
+    .main-grid-container section h2{
         font-size: 1.3rem;
     }
-    .main-container section h3{
+    .main-grid-container section h3{
         font-size: 1.1rem;
     }
-    .main-container section p{
+    .main-grid-container section p{
         font-size: 0.8rem;
     }
 }
 
-/*tablet*/
+/* Tablet Responsive */
 /* @media (min-width: 768px) and (max-width: 1200px){
 } */

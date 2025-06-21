@@ -8,15 +8,25 @@ This is a small project I built while learning web development. It's nothing fan
 - HTML5 (structure)
 - Git (version control)
 - CSS (Selector, Flex, Grid, Responsive)
+- JavaScript (DOM,Event)
 
 ## 📄 File Structure
 <pre>
 my-first-repo/
+├── form.html
 ├── index.html
+├── login.html
 ├── assets/
-│   ├── css/
+│   ├── fonts/
+│   ├── icons/
 │   └── images/
-└── README.md
+├── css/
+│   └── style.css
+├── js/
+│   ├── login.js
+│   └── script.js
+├── README.md
+└── web-dev-schedule.html
 </pre>
 
 ## 🌱 What I’m Currently Learning
@@ -27,6 +37,7 @@ my-first-repo/
 - Styling pages with custom CSS and responsive design techniques
 - Reviewing JavaScript fundamentals (variables, functions, loops)
 - Practicing DOM manipulation and basic user interaction
+- **Exploring modern JavaScript (ES6+) features like arrow functions, template literals, and destructuring**
 
 ## 📝 What I Learned
 
@@ -41,7 +52,7 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 
 - [x] Improve overall styling using **custom CSS**
 - [x] Make the layout **responsive** using media queries and mobile-first techniques
-- [ ] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
+- [x] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
 - [ ] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
 - [ ] Use **Bootstrap** for layout and responsive design  
 - [ ] Try out **Tailwind CSS** for utility-first styling  
