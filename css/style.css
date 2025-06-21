@@ -13,15 +13,6 @@
     --muted-color: #6A7B8C;
     --text-color: #333;
     --light-text: #fff;
-
-    /*Dark Mode*/
-    --primary-bg-color-darkmode:#1A1A2E;
-    --secondary-bg-color-darkmode:#2C2C4A;
-    --primary-color-darkmode:#5D7DD3;
-    --accent-color-darkmode: #FFAC63;
-    --accent-color-2-darkmode: #8DAFE5;
-    --muted-color-darkmode:#A7B8C9;
-    --text-color-darkmode:#E0E0E0;
 }
 
 *{
@@ -36,6 +27,18 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme{
+    --primary-bg-color:#1A1A2E;
+    --secondary-bg-color:#2C2C4A;
+    --primary-color:#5D7DD3;
+    --accent-color: #FFAC63;
+    --accent-color-2: #8DAFE5;
+    --muted-color:#A7B8C9;
+    --text-color:#E0E0E0;  
+    transition: background-color 0.3s ease;
 }
 
 .main-container {
@@ -56,6 +59,7 @@ body {
 .main-container nav{
     grid-area:nav;
     background-color: var(--secondary-bg-color);
+    color: var(--text-color);
     padding:30px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -63,6 +67,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .main-container nav .nav-logo{
@@ -120,7 +125,7 @@ body {
     border-radius: 5px;
     font-size:1em;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     width: 130px;
 }
 
@@ -145,6 +150,7 @@ body {
 .main-container main {
     grid-area: main;
     background-color: var(--secondary-bg-color);
+    color: var(--text-color);
     padding: 30px;
     margin: 0px;
     border-radius: 10px;
@@ -154,6 +160,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 .main-container main img {
@@ -182,10 +189,11 @@ body {
 
 .main-container section {
     background-color: var(--secondary-bg-color);
+    color: var(--text-color);
     padding: 10px;
     border-radius: 10px;
     min-width: 300px;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
 section a {
@@ -307,7 +315,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    color: var(--primary-bg-color);
+    color: var(--light-text);
     padding: 20px;
     border-radius: 10px;
 }
