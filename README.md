@@ -7,7 +7,7 @@ This is a small project I built while learning web development. It's nothing fan
 
 - HTML5 (structure)
 - Git (version control)
-- CSS (Selector, Flex, Grid)
+- CSS (Selector, Flex, Grid, Responsive)
 
 ## 📄 File Structure
 <pre>
@@ -37,11 +37,10 @@ But this project helped me reconnect with those foundations — writing HTML, or
 Using Git helped me commit with more intention, and adding some CSS gave me a small sense of control over how it all looks.  
 It’s not fancy, but it’s a step forward, and that’s what matters to me right now.
 
-
 ## 🚧 Future Enhancements
 
 - [x] Improve overall styling using **custom CSS**
-- [ ] Make the layout **responsive** using media queries and mobile-first techniques
+- [x] Make the layout **responsive** using media queries and mobile-first techniques
 - [ ] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
 - [ ] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
 - [ ] Use **Bootstrap** for layout and responsive design  
