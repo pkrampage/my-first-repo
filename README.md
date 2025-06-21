@@ -37,7 +37,9 @@ my-first-repo/
 - Styling pages with custom CSS and responsive design techniques
 - Reviewing JavaScript fundamentals (variables, functions, loops)
 - Practicing DOM manipulation and basic user interaction
-- **Exploring modern JavaScript (ES6+) features like arrow functions, template literals, and destructuring**
+- Exploring modern JavaScript (ES6+) features like arrow functions, template literals, and destructuring
+- **Learning to use Bootstrap for quick and effective layout and responsive design**
+- **Diving into Tailwind CSS for utility-first styling and rapid UI development**
 
 ## 📝 What I Learned
 
@@ -53,7 +55,7 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 - [x] Improve overall styling using **custom CSS**
 - [x] Make the layout **responsive** using media queries and mobile-first techniques
 - [x] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
-- [ ] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
+- [x] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
 - [ ] Use **Bootstrap** for layout and responsive design  
 - [ ] Try out **Tailwind CSS** for utility-first styling  
 - [ ] Start learning **React** and create reusable UI components  

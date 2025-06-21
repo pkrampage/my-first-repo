@@ -1,36 +1,49 @@
-const loginForm = document.getElementById('login-form')
-const userName = document.getElementById('username')
-const userPass = document.getElementById('userpassword')
-const checkUserName = document.getElementById('checkUsername')
-const checkUserPass = document.getElementById('checkPassword')
-
-let userData = {
+const userData = {
     userName: "admin",
     userPass: "P@ssword"
 }
 
-loginForm.addEventListener('submit',function(){
-    event.preventDefault(); // prevent Form loading page
-    const inputUsername = userName.value;
-    const inputPassword = userPass.value;
+// apply deconstructuring to userData object
+const {userName: adminUser, userPass: adminPass} = userData
 
-    checkUsername.innerText = "";
-    checkUsername.style.color = "";
-    checkPassword.innerText = "";
-    checkPassword.style.color = "";
+const loginForm = document.getElementById('login-form')
+const userNameInput = document.getElementById('username')
+const userPassInput = document.getElementById('userpassword')
+const checkUserName = document.getElementById('checkUsername')
+const checkUserPass = document.getElementById('checkPassword')
 
-    let isValid = true; // login data validation
+const clearErrorMessage = () => {
+    checkUserName.innerText = ""
+    checkUserName.style.color = ""
+    checkPassword.innerText = ""
+    checkPassword.style.color = ""
+}
 
-    if(userName.value !== userData.userName){
+const validateLogin = (inputUsername,inputPassword) => {
+    let isValid = true;
+    if(inputUsername !== adminUser){
         checkUserName.innerText = "Username is invalid"
         checkUserName.style.color = "red"
         isValid = false;
     }
-    if(userPass.value !== userData.userPass){
+    if(inputPassword !== adminPass){
         checkUserPass.innerText = "Password is invalid" 
         checkUserPass.style.color = "red"
         isValid = false;
     }
+    return isValid
+}
+
+// apply arrow function
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault() // prevent loading page
+    
+    const inputUsername = userNameInput.value
+    const inputPassword = userPassInput.value
+
+    clearErrorMessage();
+
+    const isValid = validateLogin(inputUsername, inputPassword)
 
     if(isValid){
         alert("Login Successful!")
