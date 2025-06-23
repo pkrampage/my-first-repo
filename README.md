@@ -16,6 +16,7 @@ my-first-repo/
 ├── form.html
 ├── index.html
 ├── login.html
+├── test.html
 ├── assets/
 │   ├── fonts/
 │   ├── icons/
@@ -23,8 +24,17 @@ my-first-repo/
 ├── css/
 │   └── style.css
 ├── js/
-│   ├── login.js
-│   └── script.js
+│   ├── data/
+│   │   └── projectData.js
+│   ├── ui/
+│   │   ├── projectCardRenderer.js
+│   │   ├── skillCardRenderer.js
+│   │   └── themeToggle.js
+│   ├── utils/
+│   │   ├── htmlString.js
+│   │   └── loginValidation.js
+│   ├── main.js
+│   └── test.js
 ├── README.md
 └── web-dev-schedule.html
 </pre>
@@ -65,6 +75,14 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 - [ ] Use **Firebase** or **Supabase** for auth and cloud storage  
 - [ ] Learn **MongoDB** for NoSQL database handling  
 - [ ] Explore **Next.js** for performance optimization and SEO 
+
+---
+
+## 🤖 AI Assistance Disclaimer
+
+I've tried my best to learn and build this project on my own. But sometimes, I used **AI tools to help me out.** For example, AI helped me **get hints and ideas for my code logic** or **point out where issues might be** so I could fix them myself. This just helped me learn faster and get past tough parts.
+
+---
 
 ## 💬 Feedback & Contributions
 
