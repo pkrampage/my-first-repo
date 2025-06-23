@@ -58,7 +58,7 @@ I was jumping between tutorials, not really knowing what I was doing — and whe
 It’s been years since I last built anything, so coming back felt a bit rusty at first.  
 But this project helped me reconnect with those foundations — writing HTML, organizing files, and thinking more about structure.  
 Using Git helped me commit with more intention, and adding some CSS gave me a small sense of control over how it all looks.  
-I also learned to use JavaScript to add a basic level of dynamic behavior, making the website more interactive. 
+I also learned to use JavaScript to add a basic level of dynamic behavior, making the website more interactive.  
 It’s not fancy, but it’s a step forward, and that’s what matters to me right now.
 
 ## 🚧 Future Enhancements
