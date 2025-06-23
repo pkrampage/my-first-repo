@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main-grid-container">
+    <header>
+            <h1>Digital Odyssey by PK-Rampage</h1>
+            <p>"An inspiring journey through the digital realm."</p>
+        </header>
         <nav>
         <div class="nav-logo">
-            <a href="index.html">LOGO</a>
+            <a href="index.html">PK-Rampage</a>
         </div>
         <ul>
             <li><a href="#about">About</a></li>
@@ -19,20 +22,19 @@
             <li><a href="#">My Service</a></li>
         </ul>
         <div class="nav-btn">
-            <button id="theme-toggle">Darkmode</button>
+            <button id="theme-toggle" class="btn btn-secondary">Darkmode</button>
         </div>
-        </nav>
+    </nav>
+    <div class="main-container">
         <main>
-            <img src="assets/images/profile2.png" alt="profile picture">
-            <h1>Pubeth Kholomklang</h1>
-            <p>Passionate web developer learner.</p>
+            <div>
+                <img src="assets/images/profile2.png" alt="profile picture">
+            </div>
+            <div>
+                <h1>Pubeth Kholomklang</h1>
+                <p>Passionate web developer learner.</p>
+            </div>
         </main>
-        <section>
-            <h2>My Contact</h2>
-            <p>Email: <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></p>
-            <p>My GitHub: <a href="https://github.com/pkrampage">PKRampage</a></p>
-            <p>My Linkin: <a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></p>
-        </section>
         <section id="about">
             <h2>About Me</h2>
             <p>Hi, I'm Pubeth — a curious mind from Bangkok with a passion for pixels, planets, and the past. 
@@ -40,30 +42,27 @@
                 Whether it's exploring front-end interactivity, diving into historical rabbit holes, decoding astrology charts, 
                 or conquering video game worlds, I'm all about turning ideas into engaging digital experiences.</p>
         </section>
-        <section>
+        <section id="skill">
+            <!-- Progress bar container -->
             <h2>Skill</h2>
-            <div class="grid-container">
-                <div class="grid-container card">HTML</div>
-                <div class="grid-container card">CSS</div>
-                <div class="grid-container card">JavaScript</div>
-                <div class="grid-container card">Linux</div>
-                <div class="grid-container card">Docker</div>
-                <div class="grid-container card">Network</div>
-                <div class="grid-container card">Digital Forensic</div>
+            <div class="subcontainer-grid">
+                <div class="subcontainer-grid skill">HTML</div>
+                <div class="subcontainer-grid skill">CSS</div>
+                <div class="subcontainer-grid skill">JavaScript</div>
+                <div class="subcontainer-grid skill">Linux</div>
+                <div class="subcontainer-grid skill">Docker</div>
+                <div class="subcontainer-grid skill">Network</div>
+                <div class="subcontainer-grid skill">Digital Forensic</div>
             </div>
+
         </section>
         <section id="project">
             <h2>Project / Experience</h2>
-            <article>
-                <h3>Infotronics Co.,Ltd. - Trainee</h3>
-                <p>Developed a backend system to support Vtiger CRM on the Cloud, enabling seamless user registration for Vtiger Cloud services provided by InfoTronics Co., Ltd., using PHP.</p>
-            </article>
-            <article>
-                <h3>Office of the Army Comptroller - Tech Support</h3>
-                <p>Developed a Webserver system running on Docker Container, deploying nginx-proxy-manager, filebrowser, and Portainer using docker-compose.</p>
-            </article>
+            <div class="subcontainer-grid" id="project-list">
+            </div>
         </section>
-        <section>
+        <section id="education">
+            <!-- I'm wanna use modal with this section but I hav no idea about it -->
             <h2>Education / Certifications</h2>
             <article>
                 <h3>Thai-Nichi Institute of Technology</h3>
@@ -74,34 +73,43 @@
                 <p>Business Computing (2005-2007)</p>
             </article>
         </section>
-        <section>
+        <section id="interest">
             <h2>Interests</h2>
-            <div class="grid-container">
-                <div class="grid-container card">Video Game</div>
-                <div class="grid-container card">Software Development</div>
-                <div class="grid-container card">Linux System Administration</div>
-                <div class="grid-container card">A.I.</div>            
-                <div class="grid-container card">History</div>
-                <div class="grid-container card">Astrology</div>
+            <div class="subcontainer-grid">
+                <div class="subcontainer-grid card">Video Game</div>
+                <div class="subcontainer-grid card">Software Development</div>
+                <div class="subcontainer-grid card">Linux System Administration</div>
+                <div class="subcontainer-grid card">Artificial Intelligence</div>            
+                <div class="subcontainer-grid card">History</div>
+                <div class="subcontainer-grid card">Astrology</div>
             </div>
         </section>
-        <section class="form">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
-            <input type="submit" value="Send">
-        </form>
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <div class="subcontainer-flex">
+                <div class="subcontainer-flex contact-form">
+                    <form class="contact-me-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                        <button id="contact-btn" class="btn">Send</button>
+                    </form>
+                </div>
+                <div class="subcontainer-flex contact-info">
+                    <p>Email: <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></p>
+                    <p>My GitHub: <a href="https://github.com/pkrampage">PKRampage</a></p>
+                    <p>My Linkin: <a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></p>
+                </div>
+            </div>
         </section>
-        <footer>
-            <p>© 2025 Pubeth. All rights reserved.</p>
-            <p>19 June 2025</p>
-        </footer>
     </div>
-    <script src="js/script.js"></script>
+    <footer>
+        <p>© 2025 Pubeth. All rights reserved.</p>
+        <p>19 June 2025</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

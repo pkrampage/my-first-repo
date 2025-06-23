@@ -1,0 +1,61 @@
+แนวคิดการเพิ่ม Content เพื่อประยุกต์ใช้ ES6
+ส่วน "My Skills" แบบ Dynamic พร้อม Interactive Elements:
+
+แนวคิด: แทนที่จะแสดงทักษะเป็นแค่ข้อความนิ่งๆ เราจะทำให้มัน Interactive มากขึ้น! 
+เช่น แสดงทักษะพร้อมระดับความเชี่ยวชาญ (เป็นตัวเลข 1-5 หรือเป็น Progress Bar) 
+และอาจจะมีปุ่มให้คลิกดูรายละเอียดของแต่ละทักษะได้
+สิ่งที่ได้ประยุกต์ใช้:
+const / let: ใช้สำหรับ Element ต่างๆ และตัวแปรข้อมูลทักษะที่ดึงมา
+Arrow Function: สำหรับ Event Listener ของปุ่มหรือ Card แต่ละทักษะ 
+และฟังก์ชันสำหรับสร้าง HTML
+Destructuring: เมื่อเรามีข้อมูลทักษะเป็น Array ของ Object 
+(เช่น [{name: 'HTML', level: 5}, {name: 'CSS', level: 4}]) 
+เราสามารถใช้ Destructuring เพื่อดึง name และ level ออกมาตอนสร้าง Card แต่ละอันได้
+Template Literal: ใช้สำหรับ สร้าง HTML ของ Card ทักษะแต่ละอัน
+แบบ Dynamic เลยค่ะ เราสามารถแทรกชื่อทักษะ ระดับ และอาจจะมีปุ่มเข้าไปใน String ได้อย่างง่ายดาย
+Class (Optional แต่แนะนำ): ถ้าทักษะมีรายละเอียดซับซ้อน 
+หรือเราอยากจะสร้าง SkillCard แต่ละอันให้เป็น Object ที่มีพฤติกรรมของตัวเอง 
+(เช่น มี method showDetail()) เราสามารถสร้าง Class Skill หรือ SkillCard ได้เลยค่ะ
+Module (Optional): ถ้าโค้ดส่วนนี้เริ่มซับซ้อน เช่น มีฟังก์ชันสำหรับดึงข้อมูลทักษะ 
+ฟังก์ชันสำหรับสร้าง UI เราสามารถแยกเป็น skillsData.js (สำหรับข้อมูล) 
+และ skillUI.js (สำหรับสร้าง UI) แล้วค่อย import/export 
+มาใช้ใน script.js ได้ค่ะ
+ส่วน "My Projects" แบบ Filterable / Sortable:
+
+แนวคิด: ในส่วน Project ของเรา แทนที่จะแสดงผลเรียงตามลำดับอย่างเดียว 
+เราจะเพิ่มฟังก์ชันให้สามารถ กรอง (Filter) หรือ เรียงลำดับ (Sort) โปรเจกต์ได้ 
+เช่น กรองตามเทคโนโลยีที่ใช้ (HTML, CSS, JS, PHP, Docker) 
+หรือเรียงตามปีที่ทำ
+สิ่งที่ได้ประยุกต์ใช้:
+const / let: สำหรับ Element ของปุ่ม Filter/Sort และตัวแปรสำหรับเก็บ Array ของ Project
+Arrow Function: สำหรับ Event Listener ของปุ่ม Filter/Sort และ Callback 
+สำหรับ Array.prototype.filter(), Array.prototype.sort()
+Destructuring: เมื่อเรามีข้อมูลโปรเจกต์เป็น Array ของ Object 
+(เช่น [{title: 'Backend System', tech: ['PHP', 'CRM'], year: 2020}]) 
+เราสามารถ Destructure เพื่อเข้าถึง title, tech, year ได้ง่ายขึ้น
+Template Literal: ใช้สำหรับ สร้าง HTML ของแต่ละ Project Article แบบ Dynamic 
+และแสดงผลหลังจาก Filter/Sort แล้ว
+Class (Optional): อาจจะสร้าง Class Project เพื่อเป็นแม่แบบข้อมูลของแต่ละโปรเจกต์
+Module: เหมาะมากสำหรับการแยกโค้ดส่วนนี้! เราจะมี projectsData.js (สำหรับข้อมูลโปรเจกต์), 
+projectFilters.js (สำหรับฟังก์ชัน filter/sort) และ projectUI.js (สำหรับ render โปรเจกต์)
+ส่วน "Interests" ที่มี Detail Pop-up / Modal:
+
+แนวคิด: ตอนนี้ส่วน Interests แสดงเป็น Card สั้นๆ แต่ถ้าเราอยากให้ผู้ใช้คลิกที่ 
+Card (เช่น "Video Game") แล้วมี Popup หรือ Modal เด้งขึ้นมาแสดงรายละเอียดเพิ่มเติม
+เกี่ยวกับความสนใจนั้นๆ
+
+สิ่งที่ได้ประยุกต์ใช้:
+const / let: สำหรับ Element ของ Card Interests และ Modal Popup
+Arrow Function: สำหรับ Event Listener ของ Card เพื่อเปิด Modal และปังก์ชันปิด Modal
+Destructuring: ถ้าเราเก็บข้อมูล Interests แบบ Object ที่มี name และ description 
+({name: 'Video Game', description: 'I love playing RPGs and strategy games...'}) 
+เราจะใช้ Destructuring 
+ตอนดึงข้อมูลมาแสดงใน Modal
+Template Literal: ใช้สำหรับ สร้างเนื้อหาภายใน Modal Popup แบบ Dynamic ที่มีชื่อความสนใจ
+และรายละเอียด
+Class: เหมาะมากๆ สำหรับสร้าง Class Modal! Class นี้จะมี constructor 
+สำหรับรับข้อมูลที่จะแสดงใน Modal, มี method สำหรับ show() และ hide() Modal, 
+และ method สำหรับสร้างโครงสร้าง HTML ของ Modal 
+ขึ้นมาใน DOM ได้เลย
+Module: สามารถแยก Class Modal ออกไปเป็นไฟล์ modal.js 
+แล้ว export ออกมาให้ไฟล์ script.js นำไป import ใช้ได้เลยค่ะ
