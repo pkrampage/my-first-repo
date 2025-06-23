@@ -81,7 +81,9 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 
 ## 🤖 AI Assistance Disclaimer
 
-I've tried my best to learn and build this project on my own. But sometimes, I used **AI tools to help me out.** For example, AI helped me **get hints and ideas for my code logic** or **point out where issues might be** so I could fix them myself. This just helped me learn faster and get past tough parts.
+I've tried my best to learn and build this project on my own. But sometimes, I used **AI tools to help me out.**   
+For example, AI helped me **get hints and ideas for my code logic** or **point out where issues might be** so I could fix them myself.   
+This just helped me learn faster and get past tough parts.
 
 ---
 
