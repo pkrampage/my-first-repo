@@ -5,10 +5,10 @@ This is a small project I built while learning web development. It's nothing fan
 
 ## 🛠 Tech Used
 
-- HTML5 (structure)
-- Git (version control)
+- HTML5 (Structure)
+- Git (Version control)
 - CSS (Selector, Flex, Grid, Responsive)
-- JavaScript (DOM,Event)
+- JavaScript (DOM, Event, Arrow functions, Template literals, Destructuring)
 
 ## 📄 File Structure
 <pre>
