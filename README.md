@@ -47,7 +47,7 @@ my-first-repo/
 - Styling pages with custom CSS and responsive design techniques
 - Reviewing JavaScript fundamentals (variables, functions, loops)
 - Practicing DOM manipulation and basic user interaction
-- Exploring modern JavaScript (ES6+) features like arrow functions, template literals, and destructuring
+- Exploring modern JavaScript (ES6+) features like arrow functions, template literals, and destructuring.
 - **Learning to use Bootstrap for quick and effective layout and responsive design**
 - **Diving into Tailwind CSS for utility-first styling and rapid UI development**
 
@@ -67,6 +67,7 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 - [x] Make the layout **responsive** using media queries and mobile-first techniques
 - [x] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
 - [x] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
+- [ ] Dynamically generate HTML content with JavaScript using mock data
 - [ ] Use **Bootstrap** for layout and responsive design  
 - [ ] Try out **Tailwind CSS** for utility-first styling  
 - [ ] Start learning **React** and create reusable UI components  
@@ -77,15 +78,11 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 - [ ] Learn **MongoDB** for NoSQL database handling  
 - [ ] Explore **Next.js** for performance optimization and SEO 
 
----
-
 ## 🤖 AI Assistance Disclaimer
 
 I've tried my best to learn and build this project on my own. But sometimes, I used **AI tools to help me out.**   
 For example, AI helped me **get hints and ideas for my code logic** or **point out where issues might be** so I could fix them myself.   
 This just helped me learn faster and get past tough parts.
-
----
 
 ## 💬 Feedback & Contributions
 

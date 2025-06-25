@@ -1,0 +1,67 @@
+// js/ui/projectRenderer.js
+// เราต้อง import ฟังก์ชัน createDomElementFromString มาใช้ที่นี่
+
+// (เราสามารถย้าย createDomElementFromString ไปไว้ใน utils/domHelpers.js ได้)
+import { createDomElementFromString } from '../utils/domHelpers.js'; // สมมติว่าสร้างไฟล์นี้
+
+export const createProjectCard = ({projectName, projectDescription, projectImg}) => {
+    return `
+        <article class="subcontainer-grid project">
+            <img src="${projectImg}" alt="${projectName} project image">
+            <h3>${projectName}</h3>
+            <p>${projectDescription}</p>
+            <a href="#" class="btn">View Project</a>
+        </article>
+    `;
+};
+
+// ฟังก์ชันสำหรับ render Project Cards ทั้งหมด
+export const renderProjects = (projects, containerId) => {
+    const projectCardContainer = document.getElementById(containerId);
+    if (!projectCardContainer) { // ตรวจสอบเพื่อความปลอดภัย
+        console.error(`Container with ID '${containerId}' not found for projects.`);
+        return;
+    }
+
+    // ล้างเนื้อหาเก่าก่อน render ใหม่ (ถ้าจำเป็น)
+    projectCardContainer.innerHTML = ''; // ล้างก่อน ถ้าจะ render ใหม่ทั้งหมด
+
+    projects.forEach(project => {
+        const projectHtmlString = createProjectCard(project);
+        const projectCardElement = createDomElementFromString(projectHtmlString);
+
+        if (projectCardElement) {
+            projectCardContainer.appendChild(projectCardElement);
+        }
+    });
+};
+
+
+// js/main.js
+
+// 1. นำเข้าข้อมูลที่จำเป็น
+import { myProject } from './data/projectData.js';
+
+// 2. นำเข้าฟังก์ชันจัดการ UI
+import { initializeTheme } from './ui/themeManager.js';
+import { renderProjects } from './ui/projectRenderer.js';
+
+
+// 3. รอให้ DOM โหลดเสร็จ ก่อนเริ่มต้นการทำงานทั้งหมด
+document.addEventListener('DOMContentLoaded', () => {
+    // 3.1. เริ่มต้นระบบ Dark/Light Mode
+    initializeTheme(); // ฟังก์ชันนี้จะจัดการทั้ง apply theme และ setup event listener
+
+    // 3.2. แสดง Project Cards
+    renderProjects(myProject, 'project-list'); // ส่งข้อมูลและ ID ของ container ไปให้ฟังก์ชันจัดการ UI
+    // 'project-list' คือ id ของ div ที่เราอยากให้ project cards ไปแสดงผล
+
+    // 3.3. (ในอนาคต) ตั้งค่า Event Listeners หรือการทำงานอื่นๆ ที่เป็น Global
+    // เช่น setupContactForm(); หรือ initializeNavigation();
+});
+
+// 4. Global Error Handling (ถ้ามี)
+window.onerror = function(message, source, lineno, colno, error) {
+    console.error("An unexpected error occurred:", message, error);
+    return true;
+};

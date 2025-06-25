@@ -78,6 +78,14 @@ a{
     font-size: 0.9em;    
 }
 
+.main-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -88,6 +96,9 @@ header{
     color:var(--light-text);
     padding: 40px;
     height: 35vh;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: var(--border-radius);
 }
 header h1{
     font-size: 2.8em;
@@ -107,6 +118,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: var(--border-radius);
 }
 nav .nav-logo a{
     color:var(--primary-color);
@@ -152,6 +166,9 @@ main{
     padding: 30px;
     gap: 30px;
     box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 1000px;
 }
 main img{
     border-radius: 50%;
@@ -173,22 +190,24 @@ main p {
     max-width: 500px;
 }
 
-section {
+.index-section{
+    border-radius: var(--border-radius);
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
     padding: 30px 20px;
-    min-width: 300px;
+    width: 100%;
+    max-width: 1000px;
     box-shadow: var(--box-shadow);
-    margin:10px;
 }
-section a {
+
+.index-section a {
     color: var(--primary-color);
     transition: var(--transition);
 }
-section a:hover {
+.index-section a:hover {
     color: var(--hover-color);
 }
-section h2 {
+.index-section h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -196,12 +215,12 @@ section h2 {
     border-bottom: 2px solid var(--accent-color-2);
     text-align: center;
 }
-section h3 {
+.index-section h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
-section p {
+.index-section p {
     font-size: 1em;
     margin-bottom: 10px;
 }
@@ -215,11 +234,9 @@ footer {
     color: var(--light-text);
     padding: 20px;
     border-radius: 10px;
-}
-
-.main-container{
-    display:flex;
-    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .subcontainer-grid{
@@ -271,9 +288,9 @@ footer {
     font-size: 0.8em;
     padding: 8px 18px;
     margin-bottom: 20px;
+    color: var(--light-text);
 }
 .subcontainer-grid.skill, .subcontainer-grid.card{
-    display: inline-block;
     background-color: var(--primary-color);
     color:var(--light-text);
     border-radius: var(--border-radius);
@@ -295,24 +312,37 @@ footer {
     box-shadow: var(--box-shadow-hover);
     cursor:pointer;    
 }
+.subcontainer-grid.project img{
+    box-shadow: var(--box-shadow);
+}
 
 .subcontainer-flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* เพิ่มช่องว่างระหว่าง form และ info (ในแนวนอน) */
+    gap: 20px;
     justify-content: center;
     align-items: flex-start;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* .contact-form{
-    
-} */
+.contact-form {
+    background-color: var(--secondary-bg-color); 
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px; 
+    flex-basis: 550px;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    min-width: 300px; 
+    max-width: 500px; 
+    box-sizing: border-box;
+}
 .contact-me-form{
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
 }
 .contact-me-form label{
     display: block;
@@ -343,9 +373,57 @@ footer {
 }
 
 .contact-info{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
+    background-color: var(--secondary-bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 280px;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+.contact-info h3 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color-2);
+    padding-bottom: 10px;
+}
+.contact-info p {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 15px; 
+    font-size: 1.1em;
+    color: var(--text-color); 
+}
+
+.contact-info p i {
+    color: var(--accent-color);
+    margin-right: 15px;
+    font-size: 1.2em;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 /* Mobile Phone Responsive */
@@ -353,6 +431,19 @@ footer {
     .main-container {
         display:flex;
         flex-direction: column;
+        gap:20px;
+    }
+    header{
+        border-radius: 0%;
+    }
+    header h1{
+        font-size: 2em;
+    }
+    header p{
+        font-size: 1em;
+    }
+    header,nav,main, .index-section,footer{
+        border-radius: 0;
     }
     nav ul{
         display: none;
@@ -369,39 +460,60 @@ footer {
     main p{
         text-align: center;
     }
-    section h2{
+    .index-section h2{
         font-size: 1.3rem;
     }
-    section h3{
+    .index-section h3{
         font-size: 1.1rem;
     }
-    section p{
+    .index-section p{
         font-size: 0.8rem;
     }
-    .contact-info{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
+    .subcontainer-grid.skill{
+        word-break: break-word;
+        min-width: auto;
+        min-height: auto;
+        width: 120px;
+        height: 60px;
+    }
+    .subcontainer-grid.card{
+        min-width: auto;
+        min-height: auto;
+        width: 120px;
+        height: 80px;
     }
     #project-list {
-        /* ลบ grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); ที่นี่ */
-        /* และเปลี่ยนเป็น 1 คอลัมน์ หรือให้มันปรับความกว้างขั้นต่ำลง */
-        grid-template-columns: 1fr; /* <--- สำคัญมาก! ทำให้มี 1 คอลัมน์เต็มจอในมือถือ */
-        gap: 20px; /* อาจจะลด gap ลงในมือถือ */
-        padding: 0 15px; /* เพิ่ม padding ด้านข้างให้ #project-list ไม่ติดขอบจอ */
-        box-sizing: border-box; /* สำคัญเพื่อให้ padding ไม่ดันเกิน */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     .subcontainer-grid.project {
-        max-width: 100%; /* <--- ทำให้ Card กว้างเต็มที่ 100% ของ Container แม่ */
-        padding: 15px; /* ลด padding ลงในมือถือ */
-        box-sizing: border-box; /* สำคัญเพื่อให้ padding ไม่ดันเกิน */
+        max-width: 100%; 
+        padding: 15px; 
+        box-sizing: border-box; 
     }
     #project-list img {
         width: 100%;
-        object-fit:fill;
+        object-fit:cover;
         margin-bottom: 20px;
     }
-    
+    .subcontainer-flex {
+        flex-direction: column; 
+        align-items: center;
+        gap:20px;
+        padding:10px
+    }
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin-top: 20px;
+        max-width: unset;
+        padding:20px;
+    }
+    .contact-me-form .btn {
+        align-self: center;
+    }
 }
 
 /* Tablet Responsive */

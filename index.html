@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
+    <div class="main-container">
+        <header>
             <h1>Digital Odyssey by PK-Rampage</h1>
             <p>"An inspiring journey through the digital realm."</p>
         </header>
         <nav>
-        <div class="nav-logo">
-            <a href="index.html">PK-Rampage</a>
-        </div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#">My Service</a></li>
-        </ul>
-        <div class="nav-btn">
-            <button id="theme-toggle" class="btn btn-secondary">Darkmode</button>
-        </div>
-    </nav>
-    <div class="main-container">
+            <div class="nav-logo">
+                <a href="index.html">PK-Rampage</a>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#">My Service</a></li>
+            </ul>
+            <div class="nav-btn">
+                <button id="theme-toggle" class="btn btn-secondary">Darkmode</button>
+            </div>
+        </nav>
         <main>
             <div>
                 <img src="assets/images/profile2.png" alt="profile picture">
@@ -35,14 +36,14 @@
                 <p>Passionate web developer learner.</p>
             </div>
         </main>
-        <section id="about">
+        <section class="index-section" id="about">
             <h2>About Me</h2>
             <p>Hi, I'm Pubeth — a curious mind from Bangkok with a passion for pixels, planets, and the past. 
                 I'm a web developer who loves weaving technology with imagination. 
                 Whether it's exploring front-end interactivity, diving into historical rabbit holes, decoding astrology charts, 
                 or conquering video game worlds, I'm all about turning ideas into engaging digital experiences.</p>
         </section>
-        <section id="skill">
+        <section class="index-section" id="skill">
             <!-- Progress bar container -->
             <h2>Skill</h2>
             <div class="subcontainer-grid">
@@ -54,14 +55,13 @@
                 <div class="subcontainer-grid skill">Network</div>
                 <div class="subcontainer-grid skill">Digital Forensic</div>
             </div>
-
         </section>
-        <section id="project">
+        <section class="index-section" id="project">
             <h2>Project / Experience</h2>
             <div class="subcontainer-grid" id="project-list">
             </div>
         </section>
-        <section id="education">
+        <section class="index-section" id="education">
             <!-- I'm wanna use modal with this section but I hav no idea about it -->
             <h2>Education / Certifications</h2>
             <article>
@@ -73,7 +73,7 @@
                 <p>Business Computing (2005-2007)</p>
             </article>
         </section>
-        <section id="interest">
+        <section class="index-section" id="interest">
             <h2>Interests</h2>
             <div class="subcontainer-grid">
                 <div class="subcontainer-grid card">Video Game</div>
@@ -84,10 +84,10 @@
                 <div class="subcontainer-grid card">Astrology</div>
             </div>
         </section>
-        <section id="contact-me">
+        <section class="index-section" id="contact-me">
             <h2>Contact Me</h2>
             <div class="subcontainer-flex">
-                <div class="subcontainer-flex contact-form">
+                <div class="contact-form">
                     <form class="contact-me-form">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Your name">
@@ -98,18 +98,22 @@
                         <button id="contact-btn" class="btn">Send</button>
                     </form>
                 </div>
-                <div class="subcontainer-flex contact-info">
-                    <p>Email: <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></p>
-                    <p>My GitHub: <a href="https://github.com/pkrampage">PKRampage</a></p>
-                    <p>My Linkin: <a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:pubeth.k@gmail.com">pubeth.k@gmail.com</a></p>
+                    <p><i class="fab fa-github"></i><a href="https://github.com/pkrampage">PKRampage</a></p>
+                    <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/pubeth-k/">Pubeth Kholomklang</a></p>
+                    <p><i class="fab fa-facebook"></i><a href="https://www.facebook.com/imrampage56">Pubeth Kholomklang</a></p>
+                    <p><i class="fab fa-twitter"></i><a href="https://twitter.com/pkrampage55">PK-Rampage</a></p>
+                    <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/pb_klg/">pb_klg</a></p>
+                    <p><i class="fab fa-tiktok"></i><a href="https://www.tiktok.com/@pkrampage">pkrampage</a></p>
                 </div>
             </div>
         </section>
-    </div>
     <footer>
         <p>© 2025 Pubeth. All rights reserved.</p>
         <p>19 June 2025</p>
     </footer>
+    </div>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
