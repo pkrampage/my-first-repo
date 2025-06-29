@@ -17,6 +17,7 @@ my-first-repo/
 ├── index.html
 ├── login.html
 ├── test.html
+├── web-dev-schedule.html
 ├── assets/
 │   ├── fonts/
 │   ├── icons/
@@ -27,16 +28,12 @@ my-first-repo/
 │   ├── data/
 │   │   └── projectData.js
 │   ├── ui/
-│   │   ├── projectCardRenderer.js
-│   │   ├── skillCardRenderer.js
 │   │   └── themeToggle.js
 │   ├── utils/
-│   │   ├── htmlString.js
 │   │   └── loginValidation.js
 │   ├── main.js
 │   └── test.js
-├── README.md
-└── web-dev-schedule.html
+└── README.md
 </pre>
 
 ## 🌱 What I’m Currently Learning
