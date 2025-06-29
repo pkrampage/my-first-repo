@@ -64,7 +64,7 @@ It’s not fancy, but it’s a step forward, and that’s what matters to me rig
 ## 🚧 Future Enhancements
 
 - [x] Improve overall styling using **custom CSS**
-- [x] Make the layout **responsive** using media queries and mobile-first techniques
+- [ ] Make the layout **responsive** using media queries and mobile-first techniques
 - [x] Add **basic JavaScript functionality** (like toggling themes or showing/hiding content)  
 - [x] Clean up code with modern **ES6 features** (arrow functions, template strings, destructuring)  
 - [ ] Dynamically generate HTML content with JavaScript using mock data
