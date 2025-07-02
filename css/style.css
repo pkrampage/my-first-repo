@@ -27,11 +27,6 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
 body {
     background-color: var(--primary-bg-color);
     color: var(--text-color);
@@ -98,6 +93,7 @@ header{
     height: 35vh;
     width: 100%;
     max-width: 1000px;
+    margin-top: 15px;
     border-radius: var(--border-radius);
 }
 header h1{
@@ -190,7 +186,7 @@ main p {
     max-width: 500px;
 }
 
-.index-section{
+.main-container > section{
     border-radius: var(--border-radius);
     background-color: var(--secondary-bg-color);
     color: var(--text-color);
@@ -199,37 +195,34 @@ main p {
     max-width: 1000px;
     box-shadow: var(--box-shadow);
 }
-
-.index-section a {
+.main-container > section a {
     color: var(--primary-color);
     transition: var(--transition);
 }
-.index-section a:hover {
+.main-container > section a:hover {
     color: var(--hover-color);
 }
-.index-section h2 {
+.main-container > section h2 {
     color: var(--primary-color);
     font-size: 1.8rem;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--accent-color-2);
 }
-.index-section h3 {
+.main-container > section h3 {
     color: var(--primary-color);
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
-.index-section p {
+.main-container > section p {
     font-size: 1em;
     margin-bottom: 10px;
 }
-
-.index-section ul {
+.main-container > section ul {
     list-style: disc inside;
     padding-left: 0.5em;
 }
-
-.index-section ul:last-child {
+.main-container > section ul:last-child {
     margin-bottom: 15px;
 }
 
@@ -242,7 +235,7 @@ footer {
     color: var(--light-text);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     max-width: 1000px;
 }
@@ -255,8 +248,9 @@ footer {
     margin: 0 auto;
 }
 
-#about p{
+#about > p{
     text-align: justify;
+    overflow-wrap: break-word;
 }
 
 #project h3{
@@ -345,24 +339,6 @@ footer {
     font-size: 1.2em;
     min-width: 25px;
     text-align: center;
-}
-
-/* Social Media Icons */
-.social-icons {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.social-icons a {
-    color: var(--primary-color);
-    font-size: 1.8em;
-    margin: 0 10px;
-    transition: var(--transition);
-}
-
-.social-icons a:hover {
-    color: var(--accent-color);
-    transform: translateY(-3px);
 }
 
 /* Mobile Phone Responsive */
